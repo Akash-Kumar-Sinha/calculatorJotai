@@ -1,0 +1,26 @@
+
+
+
+
+import React from "react";
+
+import MovieCards from "./MovieCards";
+
+const MovieMap = ({MovieList}) =>{
+    return(
+        <div>
+            {
+                MovieList.map((user,i)=>{
+                    return(
+                        <MovieCards
+                        image = {MovieList[i].image}  
+                        name = {MovieList[i].name}  
+                        />
+                    );
+                })
+            }
+        </div>
+    )
+}
+
+export default MovieMap;

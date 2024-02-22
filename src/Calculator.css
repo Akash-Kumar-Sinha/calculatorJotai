@@ -1,0 +1,61 @@
+body {
+  color: white;
+  background-color: black;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+button {
+  font-size: 1.6rem;
+  width: 130px;
+  height: 40px;
+  margin: 20px auto;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-weight: 500;
+  background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+              7px 7px 20px 0px rgba(0,0,0,.1),
+              4px 4px 5px 0px rgba(0,0,0,.1);
+}
+
+button:hover {
+  box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+              inset -4px -4px 6px 0 rgba(255,255,255,.2),
+              inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+.container input[type="expression"] {
+  width: auto;
+  height: 4rem;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  line-height: normal;
+  padding: 0.5rem 1rem;
+}
+
+input[type="expression"]::-webkit-inner-spin-button,
+input[type="expression"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
